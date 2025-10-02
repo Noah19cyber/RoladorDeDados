@@ -4,7 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="RoladorDeDados.MainPage"
     BackgroundColor="White"
-    Title="Rolador de Dados">
+    Title="RoladorDeDados">
 
     <VerticalStackLayout Padding="24" Spacing="24">
 
@@ -25,6 +25,22 @@
             TextColor="Black"
             HorizontalOptions="Center"
             VerticalOptions="CenterAndExpand" />
+
+        <!-- Picker para escolher os lados -->
+        <Picker
+            x:Name="DicePicker"
+            Title="Escolha o dado"
+            FontSize="16"
+            TextColor="Black">
+            <Picker.Items>
+                <x:String>D4</x:String>
+                <x:String>D6</x:String>
+                <x:String>D8</x:String>
+                <x:String>D10</x:String>
+                <x:String>D12</x:String>
+                <x:String>D20</x:String>
+            </Picker.Items>
+        </Picker>
 
         <!-- Botão de ação -->
         <Button
@@ -65,4 +81,5 @@
 
     </VerticalStackLayout>
 </ContentPage>
+
 
